@@ -1,0 +1,14 @@
+{
+  "name": "restuarant-form-page",
+  "version": "1.0.0",
+  "description": "> This restuarant project is a website that showcase about our restuarant features.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "hint": "^6.2.0"
+  }
+}
