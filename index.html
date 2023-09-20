@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" text="text/css" href="index.css">
+	<title>Restuarant-form</title>
+	</head>
+	<body>
+        <!---HEAD SECTION--->
+		<div id="head">
+        <h1>Divine Restuarant</h1>
+        <h3>Address: ogun state Ago-Iwoye,aiyegbami </h3></div>
+	<p>Divine Restuarant is a place where you can order your food Order from any where customers within the north-west.Tis 
+        webpae listed out the available food available including the contact information.
+        <!---BODY SECTION--->
+        <div class="container-content">
+		<div class="order-container">	
+        <div class="container">
+                        <h2>Main Dish</h2>
+                        <input type="checkbox" name="main course" value="Jollof-rice">Jollof-rice<br>
+                       <input type="checkbox" name="main course" value="Fried-rice">Fried-rice<br>
+                        <input type="checkbox" name="main course" value="Chinese-rice">Chinese-rice<br>
+                        <input type="checkbox" name="main course" value="Ofada-rice">Ofada-rice<br>
+                         <input type="checkbox" name="main course" value="White-rice">White-rice<br>
+                      </div>
+                      <div class="container ">
+                    <h2>Appetizer</h2>
+                    <input type="radio" name="appetizer" value="None">None<br>
+                    <input type="radio" name="appetizer" value="salade">Salade<br>
+                    <input type="radio" name="appetizer" value="First Salade">Fruit Salade<br>
+                    <input type="radio" name="appetizer" value="Bread">Bread<br>
+                    <input type="radio" name="appetizer" value="Fruit">Fruit<br>
+                  </div>
+                 <div class="container ">
+                    <h2>Drinks</h2>
+                    <input type="radio" name="Additional" value="Red wine">Red wine<br>
+                    <input type="radio" name="Additional" value="Coca cola">Coca cola<br>
+                    <input type="radio" name="Additional" value="Yughort">Yughort<br>
+                    <input type="radio" name="Additional" value="Fanta Orange">Fanta Orange<br>
+                      <input type="radio" name="Additional" value="Puppy drinks">Puppy drinks<br>
+                  </div>
+                  <div class="container ">
+                    <h2>Meat</h2>
+                    <input type="checkbox" name="Additional" value="Goat Meat">Goat Meat<br>
+                    <input type="checkbox" type="radio" name="Additional" value="Cow Meat">Cow Meat<br>
+                    <input type="checkbox" name="Additional" value="Chicken laps">Chicken laps<br>
+                    <input type="checkbox"name="Additional" value="Turkey">Turkey<br>
+                      <input type="checkbox" name="Additional" value="Egg">Egg<br>
+                      <input type="checkbox" name="Additional" value="Ponmo">Ponmo<br>
+                  </div>
+    
+                </div>
+                <label class="plate-order" for="plate">How many plate do you want to order</label>
+                <select name="number" id="plate-number">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <!---CONTACT SECTION--->
+                <div class="contact-container">
+          <form action="https://formspree.io/f/mbjwdkeq" name="form" class="form-container" method="post">
+                <h3 class="form-head">Customer Details</h3>
+            <input
+                  type="text"
+                  name="name"
+                  class="field"
+                  id="fname"
+                  placeholder="Full Name"
+                  required=""
+                  maxlength="30"
+                  onblur="validateText() "
+                />
+                <input type="email" 
+                class="field" 
+                id="email"
+                 name="text1"
+                   placeholder="Email Address" 
+                   onclick="validateEmail()"
+                   required="" />
+                
+                <input name="phone"
+                 class="field" 
+                 id="password"
+                type="number"
+                  placeholder="xxx-xxx-xxxx"
+                   required="" />
+                <input name="address" class="field" id="address" type="text"  placeholder="Address" onblur="validateText();" required="" />
+                
+                <input name="street-address" class="field" id="address" type="text"  placeholder="Street-address" onblur="validateText();" required="" />
+                
+                <input name="city" class="field" id="city" type="text"  placeholder="City" onblur="validateText();" required="" />
+
+                <input name="State/Province" class="field" id="state" type="text"  placeholder="State/Province" onblur="validateText();" required="" />
+            </form>
+                    <input class="submit" type="submit" value="Order Now" onclick="doValidate()">
+</div>
+<script src="index.js"></script>
+</body>
+</html> 
